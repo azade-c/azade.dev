@@ -1,0 +1,66 @@
+@layer base {
+  html { font-size: 100%; }
+  @media (min-width: 100ch) {
+    html { font-size: 112.5%; }
+  }
+
+  body {
+    background: var(--cream);
+    color: var(--coat);
+    font-family: var(--font-sans);
+    line-height: 1.65;
+    text-rendering: optimizeLegibility;
+    text-size-adjust: none;
+    display: flex;
+    flex-direction: column;
+  }
+
+  main { flex: 1; }
+
+  a {
+    color: inherit;
+    text-decoration-color: var(--coat-muted);
+    text-decoration-thickness: 1px;
+    text-underline-offset: 0.18em;
+    transition: color 100ms ease-out, text-decoration-color 100ms ease-out;
+  }
+  a:hover { color: var(--blaze); text-decoration-color: var(--blaze); }
+
+  :is(a, button):focus-visible {
+    border-radius: 0.25ch;
+    outline: 2px solid var(--gentian);
+    outline-offset: 2px;
+  }
+
+  ::selection { background: var(--coat); color: var(--cream); }
+
+  h1, h2, h3 {
+    font-family: var(--font-display);
+    font-weight: 700;
+    letter-spacing: -0.015em;
+    line-height: 1.2;
+  }
+
+  h1 { font-size: var(--text-xl); margin-block: 0 var(--space-m); }
+  h2 { font-size: var(--text-l); margin-block: 0 var(--space-s); }
+  h3 { font-size: var(--text-m); margin-block: 0 var(--space-2xs); }
+
+  /* Each section starts like a stretch of GR trail: white over red. */
+  h2::before {
+    content: "";
+    display: inline-block;
+    inline-size: 1.4em;
+    block-size: 0.8em;
+    margin-inline-end: 0.7ch;
+    vertical-align: -0.02em;
+    background: linear-gradient(var(--blaze-white) 0 48%, var(--blaze) 48%);
+    box-shadow: 0 0 0 1px oklch(from var(--coat) l c h / 0.25);
+    border-radius: 1px;
+  }
+
+  code, .mono { font-family: var(--font-mono); font-size: 0.9em; }
+
+  ul { padding-inline-start: 2.2ch; }
+  li + li { margin-block-start: var(--space-2xs); }
+  li::marker { color: var(--blaze); }
+}

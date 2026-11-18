@@ -1,0 +1,8 @@
+en:
+  nav:
+    label: "Site"
+  footer:
+    blog: "Blog (in French)"
+    source: "Source of this site"
+    photo_html: "Photo: a Pyrenean goat from Ferme Bacotte, %{farm}, Saint-Sever."
+    made: "Waymarked by hand by Azade, with Rails, then frozen into static files. Code under the MIT license."

@@ -1,0 +1,62 @@
+@layer components {
+  .hero {
+    display: grid;
+    gap: var(--space-l) 4ch;
+    align-items: center;
+    padding-block: var(--space-xl) var(--space-l);
+  }
+  @media (min-width: 60ch) {
+    .hero:has(.hero-photo) { grid-template-columns: minmax(0, 15rem) 1fr; }
+  }
+
+  .hero-photo {
+    inline-size: 100%;
+    max-inline-size: 15rem;
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+    border-radius: 46% 46% 6px 6px / 30% 30% 6px 6px;
+    box-shadow: 0 0 0 6px var(--cream-light), 0 0 0 7px var(--cream-line);
+  }
+
+  .kicker {
+    font-family: var(--font-mono);
+    font-size: var(--text-xs);
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--blaze);
+    margin-block: 0 var(--space-xs);
+  }
+
+  .waypoints {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    gap: var(--space-s);
+  }
+  .waypoints > li {
+    margin: 0;
+    padding: var(--space-s) 2ch;
+    background: var(--cream-light);
+    border: 1px solid var(--cream-line);
+    border-inline-start: 4px solid var(--blaze);
+    border-radius: 4px;
+  }
+  .waypoints p { margin: 0; color: var(--coat-soft); }
+
+  .prs { padding-inline-start: 0; list-style: none; }
+  .prs li { display: grid; grid-template-columns: 8ch 1fr; gap: 1ch; }
+  .prs .mono { color: var(--coat-muted); }
+
+  figure { margin: var(--space-m) 0; }
+  figure img {
+    border: 1px solid var(--cream-line);
+    border-radius: 6px;
+    background: var(--cream-light);
+  }
+  figcaption { font-size: var(--text-s); color: var(--coat-muted); margin-block-start: var(--space-xs); }
+
+  .aside {
+    font-style: italic;
+    color: var(--coat-soft);
+  }
+}

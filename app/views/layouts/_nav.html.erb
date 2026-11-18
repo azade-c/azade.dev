@@ -1,0 +1,8 @@
+<nav class="site-nav" aria-label="<%= t "nav.label" %>">
+  <%= link_to_page "index", label: safe_join([ "Azade", tag.span("🐐", aria: { hidden: true }) ], " "), class: "site-nav-brand" %>
+  <div class="site-nav-links">
+    <%= link_to_page "francois", label_type: :nav %>
+    <%= link_to_page "tracks", label_type: :nav %>
+  </div>
+  <%= render "layouts/locale_switcher" %>
+</nav>

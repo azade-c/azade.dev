@@ -1,0 +1,3 @@
+@media print {
+  .locale-switcher, .ridge { display: none; }
+}

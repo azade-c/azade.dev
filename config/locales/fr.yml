@@ -2,6 +2,7 @@ fr:
   nav:
     label: "Site"
   footer:
+    ossau: "Le pic du Midi d'Ossau vu de sa vallée, au-dessus du lac de Bious-Artigues"
     blog: "Blog"
     source: "Code de ce site"
     photo_html: "Photo : une chèvre des Pyrénées de la %{farm}, Saint-Sever."

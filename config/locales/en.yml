@@ -2,6 +2,7 @@ en:
   nav:
     label: "Site"
   footer:
+    ossau: "The Pic du Midi d'Ossau seen from its valley, above Lake Bious-Artigues"
     blog: "Blog (in French)"
     source: "Source of this site"
     photo_html: "Photo: a Pyrenean goat of %{farm}, Saint-Sever."

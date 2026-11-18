@@ -4,5 +4,5 @@ fr:
   footer:
     blog: "Blog"
     source: "Code de ce site"
-    photo_html: "Photo : une chèvre des Pyrénées de la Ferme Bacotte, %{farm}, Saint-Sever."
+    photo_html: "Photo : une chèvre des Pyrénées de la %{farm}, Saint-Sever."
     made: "Balisé à la main par Azade, avec Rails, puis figé en fichiers statiques. Code sous licence MIT."
